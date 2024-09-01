@@ -2,22 +2,22 @@
 
 #(define option-movement-title-format "number-title")
 #(define option-print-all-bar-numbers #t)
+\include "ees_articulate.ly"
 \include "ees.ly"
 
-
+hA = \once \override Accidental.stencil = ##f
 markRequiemDaCapo = {
   \once \override Score.RehearsalMark.break-visibility =
     #begin-of-line-invisible
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-  \mark \markup \remarkE \concat { "Requiem da capo " \critnote }
+  \mark \markup \remark \concat { "Requiem da capo " }
 }
-
-markQuamDaCapo = {
-  \once \override Score.RehearsalMark.break-visibility =
-    #begin-of-line-invisible
-  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
-  \mark \markup \remarkE \concat { "Quam olim da capo " \critnote }
-}
+% markQuamDaCapo = {
+%   \once \override Score.RehearsalMark.break-visibility =
+%     #begin-of-line-invisible
+%   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+%   \mark \markup \remarkE \concat { "Quam olim da capo " \critnote }
+% }
 
 
 tempoIntroitus = \tempoMarkup "Moderato"

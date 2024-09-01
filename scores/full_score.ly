@@ -6,7 +6,7 @@
 \book {
   \bookpart {
     \section "1" "Introitus"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score { %\articulate
       <<
@@ -64,7 +64,7 @@
         >>
         \new StaffGroup <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "Organo" "e Bassi" }
+            \set Staff.instrumentName = \markup \center-column { "Fagotto," "Organo" "e Bassi" }
             % \transpose c c,
             \IntroitusOrgano
           }
@@ -72,7 +72,7 @@
         \new FiguredBass { \IntroitusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 90 }
     }
   }
 }
