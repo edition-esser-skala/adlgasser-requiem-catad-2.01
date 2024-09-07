@@ -982,34 +982,42 @@ SanctusBasso = {
   \relative c {
     \clef bass
     \key c \major \time 3/4 \autoBeamOff \tempoSanctus
-    \mvTr c'2\f^\tutti c4
+    \mvDl c'2\fE^\tutti c4
     c c, r
     c'2 c4
     c c, r
     R2. %5
-    g'2\f g4
+    g'2 g4
     f d8 d e4
     f g4. g8
     c,4 r r
-    R2.*2 %11
-    g'4 g g
+    R2.*5 %14
+    g'4 g g %15
     g g, r
     g' g g
-    g g, r %15
-    g'4. g8 e4
-    c a h
+    g g, r
+    R2.
+    d'4 d d %20
+    c a8 a h4
     c8 c d2
     g,4 r r
-    R2.*2 \bar "||" %21
-    \time 4/4 \tempoSanctusB R1*3
-    r2 r4 r8 \mvTr c'\f^\tutti %25
+    R2.*2 %25
+    \time 4/4 \tempoSanctusB
+      R1*5 %30
+    r2 r4 r8 \mvTr g'\fE^\tutti
+    g4( f!) e r8 c
+    d e h c g' g, r g'\p
+    g4( f) es r8 c\f
+    d es h c g' g, r4 %35
+    R1*5 %40
+    r2 r4 r8 \mvDl c'\fE^\tutti
     c4( b) a r8 d
     d4( c) h! r8 g
     a4~ a16[ f] e([ d)] g4~ g16[ e] d([ c)]
-    f4~ f16[ d] c([ h)] e4~ e16[ c] d([ e)]
-    f([ d e f] g4) c,8 b' a g %30
+    f4~ f16[ d] c([ h)] e4~ e16[ c] d([ e)] %45
+    f([ d e f] g4) c,8 b' a g
     f4 e f2\fermata
-    c2. r4\fermata \bar "|." %32 finis
+    c1\fermata \bar "|." %48 finis
   }
 }
 
@@ -1024,23 +1032,30 @@ SanctusBassoLyrics = \lyricmode {
   us Sa -- ba --
   oth.
 
-  Ple -- ni sunt %12
+  Ple -- ni sunt %15
   coe -- li,
   coe -- li et
-  ter -- ra %15
-  glo -- ri -- a
-  tu -- a, glo --
+  ter -- ra,
+
+  ple -- ni sunt %20
+  glo -- ri -- a, glo --
   ri -- a tu --
   a.
 
-  O -- %25
+  O -- %31
+  san -- na, o --
+  san -- na in ex -- cel -- sis, o --
+  san -- na, o --
+  san -- na in ex -- cel -- sis. %35
+
+  O --
   san -- na, o --
   san -- na, o --
   san -- na in __ ex --
   cel -- sis, in __ ex --
-  cel -- sis, o -- san -- na %30
+  cel -- sis, o -- san -- na
   in ex -- cel --
-  sis. %32 finis
+  sis. %48 finis
 }
 
 BenedictusBasso = {

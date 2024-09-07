@@ -307,33 +307,42 @@ SanctusClarinoII = {
   \relative c' {
     \clef treble
     \key c \major \time 3/4 \tempoSanctus
-    e4\f r r
+    e4\fE r r
     R2.
     g4 r r
-    R2.*2 %5
-    e4~\f e8 r r4
-    R2.
+    R2.*4 %7
     r4 g g8. g16
     e4 r r
     c r r %10
+    R2.
+    c4 r r
     g' r r
     g r r
+    g r r %15
     R2.
     g4 r r
-    R2.*3 %17
+    R2.*4 %21
     r4 d' d8. d16
     g,4 r r
-    c r r \noBreak %20
-    r g g8. g16 \bar "||"
-    \time 4/4 \tempoSanctusB e4 r g r
-    R1*2
-    r2 e8\f e16. e32 e4 %25
+    c r r \noBreak
+    r d d8. d16 %25
+    \time 4/4 \tempoSanctusB
+      g,4 r r2 \noBreak
+    R1*4 %30
+    r2 g8\fE g16 g g8 r
+    r2 r8 c,16. c32 c4
+    r2 r8 g' g r
+    R1
+    r2 r8 g\fE g r %35
+    e4 r g r
+    R1*4 %40
+    r2 e8\fE e16. e32 e4
     r2 r8 c16. c32 c8 r
     r2 r8 g'16. g32 g8 r
-    R1*2
-    r4 g8. g16 e8 c16 c c8 c %30
+    R1*2 %45
+    r4 g8.\fE g16 e8 c16 c c8 c
     c8.[ c16 c8. c16] c2\fermata
-    c8 c c c c4 r\fermata \bar "|." %32 finis
+    c8 c c c c4 r\fermata \bar "|." %48 finis
   }
 }
 

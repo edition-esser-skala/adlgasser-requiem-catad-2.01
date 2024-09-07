@@ -1074,7 +1074,7 @@ SanctusAlto = {
   \relative c' {
     \clef treble
     \key c \major \time 3/4 \autoBeamOff \tempoSanctus
-    \mvTr g'2\f^\tutti a4
+    \mvDl g'2\fE^\tutti a4
     a g r
     g2 a4
     a g r
@@ -1083,27 +1083,37 @@ SanctusAlto = {
     a4 g8 g g4
     a g4. g8
     g4 r r
-    R2.*2 %11
-    d4 d e
+    R2.*5 %14
+    d4 d e %15
     e d r
     d d e
-    e d r %15
-    d4. d8 e4
-    e d d
+    e d r
+    d\p d d
+    f!4.\fE f8 f4 %20
+    e d8 d d4
     e8 e d2
     d4 r r
-    R2.*2 \bar "||" %21
-    \time 4/4 \tempoSanctusB r2 r4 r8 \mvTr g\pE^\solo \noBreak
+    R2.*2 %25
+    \time 4/4 \tempoSanctusB
+      R1*5 %30
+    r2 r4 r8 \mvTr d\fE^\tutti
+    e4( d) c r8 g'
+    g g g g g g r d\p
+    es4( as) g r8 g\f
+    g g g g g g r4 %35
+    r2 r4 r8 \mvTr g\pE^\solo
     c,4 d e f
-    \appoggiatura a16 g8([ f16 e] f[ g a h] c8) g g a
-    \appoggiatura g4 f2 e4 r8 \mvTr g\f^\tutti %25
+    \appoggiatura a16 g8_([ f16 e] f[ g a h] c8) g g a
+    \appoggiatura g4 f2 e4 r
+    R1 %40
+    r2 r4 r8 \mvDl g\fE^\tutti
     a4( g) c, r8 a'
     h!4( a) d, r8 h'
     a4. a8 g4. g8
-    f2 e8 e g16([ e)] f([ g)]
-    a8 a g4 g8 g a b %30
+    f2 e8 e g16([ e)] f([ g)] %45
+    a8 a g4 g8 g a b
     a4 g f2\fermata
-    e2. r4\fermata \bar "|." %32 finis
+    e1\fermata \bar "|." %48 finis
   }
 }
 
@@ -1118,26 +1128,34 @@ SanctusAltoLyrics = \lyricmode {
   us Sa -- ba --
   oth.
 
-  Ple -- ni sunt %12
+  Ple -- ni sunt %15
   coe -- li,
   coe -- li et
-  ter -- ra %15
-  glo -- ri -- a
-  tu -- a, glo --
+  ter -- ra,
+  ple -- ni sunt
+  glo -- ri -- a %20
+  tu -- a, sunt glo --
   ri -- a tu --
   a.
 
-  O -- %22
+  O -- %31
+  san -- na, o --
+  san -- na in ex -- cel -- sis, o --
+  san -- na, o --
+  san -- na in ex -- cel -- sis. %35
+  O --
   san -- na in ex --
   cel -- sis, in ex --
-  cel -- sis, o -- %25
+  cel -- sis.
+  %40
+  O --
   san -- na, o --
   san -- na, o --
   san -- na in ex --
-  cel -- sis, o -- san -- na
-  in ex -- cel -- sis, o -- san -- na %30
+  cel -- sis, o -- san -- na %45
+  in ex -- cel -- sis, o -- san -- na
   in ex -- cel --
-  sis. %32 finis
+  sis. %48 finis
 }
 
 BenedictusAlto = {

@@ -307,33 +307,42 @@ SanctusClarinoI = {
   \relative c' {
     \clef treble
     \key c \major \time 3/4 \tempoSanctus
-    c'4\f r r
+    c'4\fE r r
     R2.
     e4 r r
-    R2.*2 %5
-    g,4~\f g8 r r4
-    R2.
-    r4 e' d8. d16
+    R2.*4 %7
+    r4 e d8. d16
     c4 r r
     c r r %10
+    R2.
+    c4 r r
     \pao g r r
-    g' r r
+    \pao g r r
+    g' r r %15
     R2.
     g4 r r
-    R2.*3 %17
+    R2.*4 %21
     r4 \pa d d8. d16 \pd
     d4 r r
-    e r r \noBreak %20
-    r \pa g, g8. g16 \pd \bar "||"
-    \time 4/4 \tempoSanctusB c4 r d r \noBreak
-    R1*2
-    r2 c8\f c16. c32 c4 %25
+    e r r \noBreak
+    r \pa d d8. d16 \pd %25
+    \time 4/4 \tempoSanctusB
+      d4 r r2 \noBreak
+    R1*4 %30
+    r2 d8\fE d16 d d8 r
+    r2 r8 c16. c32 c4
+    r2 r8 d d r
+    R1
+    r2 r8 d\fE d r
+    c4 r d r
+    R1*4 %40
+    r2 c8\fE c16. c32 c4
     r2 r8 c16. c32 c8 r
     r2 r8 d16. d32 d8 r
-    R1*2
-    r4 d8. d16 c8 c16 c c8 c %30
+    R1*2 %45
+    r4 d8. d16 c8 c16 c c8 c
     c8.[ c16 c8. c16] c2\fermata
-    c8 c c c c4 r\fermata \bar "|." %32 finis
+    c8 c c c c4 r\fermata \bar "|." %48 finis
   }
 }
 

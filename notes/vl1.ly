@@ -899,39 +899,55 @@ SanctusViolinoI = {
   \relative c' {
     \clef treble
     \key c \major \time 3/4 \tempoSanctus
-    <g e' c'>8\f g'-! g-! g-! a-! a-!
-    a8.(\trill g32 a) g16-! e'( d c) h( c d h)
-    <c e,>8 e-! e-! e-! f-! f-!
-    f4\trill 16-! g( f e) d( e f d)
-    e8 <e g,>4\p q q8~ %5
+    \mvDl <g e' c'>8\fE g'[-! g-! g-!] a-! a-!
+    a8.\trill g32 a g16 e'([ d c)] h( c d h)
+    <c e,>8 e[-! e-! e]-! f-! f-!
+    f4(\trill e16) g([ f e)] d( e f d)
+    e8 <e g,>4\pE q q8~ %5
     q16 <e b>8\f q q q q q16
     <f a,> f f f f f f f e e e e
     d d d d c c c c h h h h
-    c8 \appoggiatura a'32 g( fis g a) g8 b,(-. b-. b-.)
-    a16-! a( h c) d( e f g) a( h c c,) %10
-    \appoggiatura c h8( a16 g) fis( g fis e) d( c h a)
-    <g d' h' g'>8 d''-! d-! d-! e-! e-!
-    e8.(\trill d32 e) d16-! h'( a g) fis( g a fis)
-    <g h,>8 h-! h-! h-! c-! c-!
-    c8.(\trill h32 c) h16-! d( c h) a( h c a) %15
-    <h d,>16 q8 q q q16 q q8 q16
-    <c e,> c c c c c c c h h h h
+    c8 \grace a'32 \once \slurDashed g32( fis g a) g8 b,(-. b-. b-.)
+    a8 \grace d'32 \once \slurDashed c( h! c d) c8 \once \slurDashed f,(-. f-. f-.) %10
+    e8 \grace a32 g32( f g a) g8 b,(-. b-. b-.)
+    a16 a([ h c)] d( e f g) a( h c c,)
+    c( h a g) fis( g a h) c( e d c)
+    \grace c h8( a16 g) fis( g \hA fis e) d( c h a)
+    <g d' h' g'>8 d''[-! d-! d]-! e-! e-! %15
+    e8.\trill d32 e d16 h'([ a g]) fis( g a \hA fis)
+    <g h,>8 h[-! h-! h]-! c-! c-!
+    c8.\trill h32 c h16 d([ c h)] a( h c a)
+    <h d,>8 q4\p q q8~
+    q16 q8\f q q q q q16 %20
+    <c c,> c c c c c c c h h h h
     a a a a g g g g fis fis fis fis
-    g8[ \appoggiatura e32 d( cis d e)] d8 \once \slurDashed f,!(-. f-. f-.)
-    e16 g a h c d e f g e c g \noBreak %20
-    a a' f d c8 c h h \bar "||"
+    g8 \grace e32 d([ cis d e)] d8 f,!(-. f-. f-.)
+    e \grace a'32 g([ fis g a)] g8 c,(-. c-. c-.) \noBreak
+    h16( g e a) g4 fis %25
     \time 4/4 \tempoSanctusB
-      <c e, g,>4 r8 \appoggiatura f32 e16( d32 c) h4 r8 \appoggiatura g'32 f16( e32 d) \noBreak
-    c8\p r d r e r f r
-    \appoggiatura a16 g8( f16 e) f g a h c8 g-! g( a)
-    g16 f f f f f f f e\f g,32( f) e16-! g-! c, e'32( f) g16-! e-! %25
-    d d d d e e e e f8 \appoggiatura b,32 a( g a b) a8 a'32( fis e d)
-    e16 e e e fis fis fis fis g8 \appoggiatura c,32 h( a h c) h8 d'32( h a g)
+      g4 r8 \appoggiatura c32 h16 a32 g fis4 r8 \appoggiatura d'32 c16 h32 a \noBreak
+    g8 r a\p r h r c r
+    \appoggiatura e16 d8 c16 h c\f d e fis g8-! d-!\p d([ e)]
+    c16\cresc c c c c c c c h4 r16 \appoggiatura c'32 h\f a h16.[ c32]
+    h8( a) r16 \appoggiatura h32 a gis a16.[ h32] a8( g) r16 \appoggiatura a32 g fis g16[ h,] %30
+    a \appoggiatura d32 c h c16. e32 d16 .c32 h16. a32 g16 d32 c h16 d g, h'32 c d16 h
+    a16 a a a h h h h c8 \grace f32 \slurDashed e( d e f) e8 g32( e d c) \slurSolid
+    h8-! c-! f-! e-! e\trill d r16 h32\p c d16-! g,-!
+    as as as as h! h h h c8 \grace f32 es( d \hA es f) es8\f g32( \hA es d c)
+    h8-! c-! f-! es-! es\trill d g,16 f e d %35
+    <c' e, g,>4 r8 \appoggiatura f32 e16 d32 c h4 r8 \appoggiatura g'32 f16 e32 d
+    c8 r d\p r e r f r
+    \appoggiatura a16 g8 f16 e f\f g a h c8-! g-! g([\p a)]
+    f16\crescE f f f f f f f e4 r16 \appoggiatura f32 e\f d e16.[ f32]
+    e8( d) r16 \appoggiatura e32 d cis d16.[ e32] d8( c) r16 \appoggiatura d'32 c h c16.[ e,32] %40
+    d16 \appoggiatura g32 f e f16. a32 g16. f32 e16. d32 c16 g32 f e16 g c, e'32 f g16 e
+    d d d d e e e e f8 \appoggiatura b,32 a[ g a b] a8 a'32[ fis e d]
+    e16 e e e fis fis fis fis g8 \appoggiatura c,32 h[ a h c] h8 d'32[ h a g]
     c4~ c16 a g f h4~ h16 g f e
-    a4~ a16 f e d g4~ g16 e f g
-    a f e d d d d d c8-! e( f g) %30
-    a a, b' b, a2\fermata
-    g8 <e' g, c,> q q q4 r\fermata \bar "|." %32 finis
+    a4~ a16 f e d g4~ g16 e f g %45
+    a f e d d d d d c8 e([ f g)]
+    a-! a,-! b'-! b,-! a2\fermata
+    g8 <e' g, c,> q q q4 r\fermata \bar "|." %48 finis
   }
 }
 

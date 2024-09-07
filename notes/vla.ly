@@ -924,38 +924,55 @@ SanctusViola = {
   \relative c' {
     \clef alto
     \key c \major \time 3/4 \tempoSanctus
-    c4\f r r
+    c4\fE r r
     c c c
     c r r
     c c c
     c r r %5
-    g'8\f g g g g g
+    g'8 g g g g g
     f f d d e e
     a a g g g g
     g4 r c,
-    c r d %10
-    g,8[ r16 g'] fis16( g fis e) d( c h a)
-    g4 r r
+    c r g' %10
+    c, r c
+    c r d
+    d16 d d d << { d d d d d d d d } \\ { c c c c a a a a } >>
+    <g d'>8[ r16 g'] fis16( g fis e d_[ c h a])
+    g4 r r %15
     g' g g
     g r r
-    g g g %15
-    g8 g g g e e
+    g g g
+    g r r
+    f!8 f f f f f %20
     e e d d d d
     e e d d d d
     d4 r g,
-    g r c \noBreak %20
-    f,8 a g4 g \bar "||"
-    \time 4/4 \tempoSanctusB c8 g c r d g, d' r \noBreak
+    g r d' \noBreak
+    g,8 e' d4 d %25
+    \time 4/4 \tempoSanctusB
+      g8-! d-! g-! r a-! d,-! a'-! r \noBreak
+    d,\p d4 d d d8
+    d4 r8 a'(\f d,) g-!\p g-! g-!
+    e16\cresc e e e d d d d d4 g~\f
+    g fis d h %30
+    e8. c'16 h16. a32 g16. fis32 g8 d h g
+    e'16 e e e d g g g g8 c c, c'
+    d, e h c g' g, g'\p g
+    g4 f es8 c' c,\f c'
+    d, es h c g' g, g'16 f e d %35
+    c8-! g-! c-! r \parOn d-\parenthesize-! g,-! \parOff d'-\parenthesize-! r
     g8\p g4 g g g8
-    g4 r8 d( g,) c c c
-    a'16 a a a g g g g c,8\f c' c, c' %25
+    g4 r8 d(\f g,) c\pE c c
+    a'16\cresc a a a g g g g g4 c,~\f
+    c h g' e %40
+    a8. f16 e16. d32 c16. h32 c8 c' c, c'
     c4 b a8 f' f, d'
     d4 c h8 g' g,, g'
     a4~ a16 f e d g4~ g16 e d c
-    f4~ f16 d c h e4~ e16 c d e
-    f d e f g8 g, c b' a g %30
-    f4 e f2\fermata
-    c8 c' c, c c4 r\fermata \bar "|." %32 finis
+    f4~ f16 d c h e4~ e16 c d e %45
+    f d e f g8 g, c b' a g
+    f c4 c8 c2\fermata
+    c8 c' c, c c4 r\fermata \bar "|." %48 finis
   }
 }
 

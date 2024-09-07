@@ -262,32 +262,41 @@ SanctusTimpani = {
   \relative c {
     \clef bass
     \key c \major \time 3/4 \tempoSanctus
-    c4\f r r
+    c4\fE r r
     R2.
     c4 r r
-    R2.*2 %5
-    g4~\startTrillSpan\f g8\stopTrillSpan r r4
-    R2.
+    R2.*4 %7
     r4 g g8. g16
     c4 r r
     c r r %10
+    R2.
+    c4 r r
     g r r
     g r r
+    g r r %15
     R2.
     g4 r r
-    R2.*4 %18
+    R2.*5 %22
     g4 r r
-    c r r \noBreak %20
-    R2. \bar "||"
-    \time 4/4 \tempoSanctusB c4 r g r \noBreak
-    R1*2
-    r2 c8\f c16. c32 c4 %25
+    c r r \noBreak
+    R2. %25
+    \time 4/4 \tempoSanctusB
+      g4 r r2 \noBreak
+    R1*4 %30
+    r2 g8\fE g16 g g8 r
+    r2 r8 c16. c32 c4
+    r2 r8 g g r
+    R1
+    r2 r8 g\fE g r %35
+    c4 r g r
+    R1*4 %40
+    r2 c8\fE c16. c32 c4
     r2 r8 c16. c32 c8 r
     r2 r8 g16. g32 g8 r
-    R1*2
-    r4 g8. g16 c8 c16 c c8 c %30
+    R1*2 %45
+    r4 g8.\fE g16 c8 c16 c c8 c
     c8.[ c16 c8. c16] c2\fermata
-    c8 c c c c4 r\fermata \bar "|." %32 finis
+    c8 c c c c4 r\fermata \bar "|." %48 finis
   }
 }
 
