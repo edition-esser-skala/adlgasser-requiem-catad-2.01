@@ -4,7 +4,7 @@ composer:
 title: Requiem
 id: CatAd 2.01
 genre: requiem
-scoring: S, A, T, B (solo), S, A, T, B (coro),\\2 fag, 2 clno (C), 2 trb, timp (C–G), 2 vl, vla, b, org
+scoring: S, A, T, B (solo), S, A, T, B (coro),\\2 fag, 2 clno (C), 2 trb, timp (C–G), 2 vl, 2 vla, b, org
 license: cc-by-sa-4.0
 sources:
   B1:
