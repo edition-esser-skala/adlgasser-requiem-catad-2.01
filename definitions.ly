@@ -36,10 +36,10 @@ tempoOffertorium = \tempoMarkup "Vivace non troppo"
 tempoSanctus = \tempoMarkup "Moderato"
   tempoSanctusB = \tempoMarkup "Allegro"
 tempoBenedictus = \tempoMarkup "Andante maestoso"
-  tempoOsanna = \tempo 4 = 90
-  % tempoOsanna = \tempoMarkup "Allegro"
+  tempoOsanna = \tempoMarkup "Allegro"
 tempoAgnus = \tempoMarkup "Andante moderato"
-  tempoAgnusB = \tempoMarkup "Moderato"
+  tempoAgnusB = \tempo 4 = 90
+  % tempoAgnusB = \tempoMarkup "Largo non troppo"
 
 
 \include "notes/fag1.ly"

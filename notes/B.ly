@@ -1218,10 +1218,10 @@ AgnusBasso = {
   \relative c {
     \clef bass
     \key c \major \time 4/4 \autoBeamOff \tempoAgnus
-    \mvTr c4.\f^\tutti e8 h c r e
+    \mvTr c4.\fE^\tutti e8 h c r e
     h c r e f4 f8 f
     e4 e8 e d c d([ g,)]
-    c4^\critnote r r2
+    c4 r r2
     R1 %5
     f8.\f f16 f8 d g4. g8
     c,4 r r2
@@ -1237,7 +1237,7 @@ AgnusBasso = {
     r2 r4 g'8 g
     g g, r4 r2 %20
     R1*9 %29
-    \mvTr c8\f^\tutti c c4 f, r %30
+    \mvTr c8\fE^\tutti c c4 f, r %30
     c'8 c16 c c8 c f8. f16 g8 g
     a a a4 g r
     d8 d d4 g, g'8 g
@@ -1252,32 +1252,38 @@ AgnusBasso = {
     c,4 r r2 \noBreak
     R1 \bar "||"
     \time 3/4 \tempoAgnusB \newSpacingSection
-      \mvTr c4.\f^\tutti c8 c c \noBreak
-    c2. %45
+      \mvTr c2.~\fE^\tutti \noBreak
+    c2 c4 %45
+    c2.~
+    c4 r r
+    R2.*8 %55
+    c4. c8 c c
+    c2.
     c~
     c4 r r
-    R2.
+    R2. %60
     f2\p g4
-    a2 g4 %50
+    a2 g4
     f2.
     fis
-    g4.\cresc g8 g4
+    g4.\crescE g8 g4 %65
     as\f as4. as8
-    g4 r r %55
+    g4 r r
     r r8 \mvTr g\pE^\solo g a
     h4. d16 h \appoggiatura h a8 g16 fis
-    g8 g r4 r
-    R2.*2 %60
-    r4 r8 \mvTr c,\f^\tutti c c'
+    g8 g r4 r %70
+    R2.*2
+    r4 r8 \mvTr c,\fE^\tutti c c'
     h4 c c8 c
-    f,4 e r
+    f,4 e r %75
     f2 g4
-    a4. a8 gis4 %65
+    a4. a8 gis4
     a2 f4
     g!2.
-    g,
+    g, %80
     c4 r r
-    R2.\fermata \bar "|." %70 finis
+    R2.*8 %89
+    R2.\fermata \bar "|." %90 finis
   }
 }
 
@@ -1287,22 +1293,22 @@ AgnusBassoLyrics = \lyricmode {
   ca -- ta, pec -- ca -- ta mun --
   di:
   %5
-  Do -- na e -- i re -- qui --
+  Do -- na e -- is re -- qui --
   em.
 
   A -- gnus %10
   De -- i, qui tol -- lis, qui
   tol -- lis pec -- ca -- ta pec --
   ca -- ta mun -- di:
-  Do -- na e -- i,
-  do -- na e -- i %15
+  Do -- na e -- is,
+  do -- na e -- is %15
   re -- qui -- em.
 
   A -- gnus %19
   De -- i: %20
 
   Lux ae -- ter -- na lu -- %30
-  ce -- at e -- i, Do -- mi -- ne, cum
+  ce -- at e -- is, Do -- mi -- ne, cum
   San -- ctis tu -- is
   in ae -- ter -- num, qui -- a
   pi -- us es, qui -- a
@@ -1315,28 +1321,32 @@ AgnusBassoLyrics = \lyricmode {
   qui -- a, pi -- us
   es.
 
-  Re -- qui -- em ae --
-  ter -- %45
+  Re --
+  qui -- %45
+  em, __
+
+  re -- qui -- em ae -- %56
+  ter --
   nam __
 
-  do -- na, %49
-  do -- na %50
+  do -- na, %61
+  do -- na
   e --
-  i,
-  do -- na e --
-  i, Do -- mi --
-  ne: %55
+  is,
+  do -- na e -- %65
+  is, Do -- mi --
+  ne:
   Et lux per --
-  pe -- tu -- a lu -- ce -- at %60
-  e -- i.
+  pe -- tu -- a lu -- ce -- at
+  e -- is. %70
 
-  Cum San -- ctis %61
+  Cum San -- ctis %73
   tu -- is in ae --
-  ter -- num,
+  ter -- num, %75
   qui -- a
-  pi -- us es, %65
+  pi -- us es,
   qui -- a
   pi --
-  us
-  es. %69 finis
+  us %80
+  es. %81 finis
 }

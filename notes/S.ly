@@ -1333,7 +1333,7 @@ AgnusSoprano = {
   \relative c' {
     \clef treble
     \key c \major \time 4/4 \autoBeamOff \tempoAgnus
-    \mvTr c'4.\f^\tutti c8 f e r c
+    \mvTr c'4.\fE^\tutti c8 f e r c
     f e r c c4 a8 c
     c4 g8 c f, e f4
     e r d\p d'
@@ -1355,7 +1355,7 @@ AgnusSoprano = {
     e4. f16 e e8. f16 \appoggiatura e8 d4
     c r r2
     R1*5 %28
-    r2 r4 \mvTr c~\f^\tutti
+    r2 r4 \mvTr c~\fE^\tutti
     c8 b b4 a c~ %30
     c8 b16 b b8 b a8. a16 g8 g
     fis fis fis4 g d'~
@@ -1371,32 +1371,38 @@ AgnusSoprano = {
     c4 r r2 \noBreak
     R1 \bar "||"
     \time 3/4 \tempoAgnusB \newSpacingSection
-      \mvTr c4.\f^\tutti c8 c c \noBreak
-    c2. %45
+      \mvTr c2.~\fE^\tutti \noBreak
+    c2 c4 %45
+    c2.~
+    c4 r r
+    R2.*8 %55
+    c4. c8 c c
+    c2.
     c~
     c4 r r
-    r r g'~\p
+    r r g'~\p %60
     g8.[ e16] f8 r f4~
-    f8.[ d16] e4 r %50
+    f8.[ d16] e4 r
     r d d
     es2.~
-    es2\cresc d4
+    es2\cresc d4 %65
     c2\f c4
-    h r r %55
+    h r r
     r r8 \mvTr h\pE^\solo h c
     d4. g16 d \appoggiatura d c8 h16 a
-    h8 h r4 r
-    R2.*2 %60
-    r4 r8 \mvTr c\f^\tutti c c
+    h8 h r4 r %70
+    R2.*2
+    r4 r8 \mvTr c\fE^\tutti c c
     f4 e e8 e
-    d4 c r
+    d4 c r %75
     a8.([ f'16)] f2
-    f8.([ e16)] e2 %65
-    e4 e f8.([ d16)]
+    f8.([ e16]) e2
+    e4 e f8.([ d16])
     c2.
-    h
+    h %80
     c4 r r
-    R2.\fermata \bar "|." %70 finis
+    R2.*8 %89
+    R2.\fermata \bar "|." %90 finis
   }
 }
 
@@ -1405,8 +1411,8 @@ AgnusSopranoLyrics = \lyricmode {
   tol -- lis, qui tol -- lis pec --
   ca -- ta, pec -- ca -- ta mun --
   di: Do -- na
-  e -- i, do -- %5
-  na e -- i __ re -- qui --
+  e -- is, do -- %5
+  na e -- is re -- qui --
   em.
 
   A -- gnus %10
@@ -1414,18 +1420,18 @@ AgnusSopranoLyrics = \lyricmode {
   tol -- lis pec -- ca -- ta pec --
   ca -- ta mun -- di:
 
-  Do -- na e -- i __ %15
+  Do -- na e -- is %15
   re -- qui -- em.
 
   A -- gnus %19
   De -- i, a -- gnus %20
-  De -- i, qui tol -- lis, qui
-  tol -- lis pec -- ca -- ta mun --
+  De -- i, qui tol -- lis pec --
+  ca -- ta, pec -- ca -- ta mun --
   di:
 
   Lux __ %29
   ae -- ter -- na lu -- %30
-  ce -- at e -- i, Do -- mi -- ne, cum
+  ce -- at e -- is, Do -- mi -- ne, cum
   San -- ctis tu -- is in __
   ae -- ter -- num,
   qui -- a pi -- us es,
@@ -1438,29 +1444,33 @@ AgnusSopranoLyrics = \lyricmode {
   pi -- us
   es.
 
-  Re -- qui -- em ae --
-  ter -- %45
+  Re --
+  qui -- %45
+  em, __
+
+  re -- qui -- em ae -- %56
+  ter --
   nam __
 
-  do --
+  do -- %60
   na, do --
-  na, %50
+  na,
   do -- na
   e --
-  i,
+  is, %65
   Do -- mi --
-  ne: %55
+  ne:
   Et lux per --
   pe -- tu -- a lu -- ce -- at
-  e -- i.
+  e -- is. %70
 
-  Cum San -- ctis %61
+  Cum San -- ctis %73
   tu -- is in ae --
-  ter -- num,
+  ter -- num, %75
   qui -- a
-  pi -- us %65
+  pi -- us
   es, qui -- a __
   pi --
-  us
-  es. %69 finis
+  us %80
+  es. %81 finis
 }

@@ -2148,77 +2148,97 @@ AgnusOrgano = {
   \relative c {
     \clef bass
     \key c \major \time 4/4 \tempoAgnus
-    \mvTr c4.\f-\tutti e8 h c r e
+    \mvTr c4\fE-\tutti r8 e h c r e
     h c r e f f f f
     e e e e d c d g,
     c4 r f8\p r fis r
-    g r f r e r e\cresc r %5
+    g r f r e\cresc r e r %5
     f\f r f d g g g g
-    c, c'-\solo e, c r f a c
-    r e, g c d, d d c
-    h h a a g r h c
+    c, c'-\solo e, c r f-! a-! c-!
+    r e,-! g-! c-! d, d d c
+    h h a a g r h-! c-!
     d d d d g,4-\tutti r8 h' %10
     fis g r h fis g r h,
     c c c c h h h h'
     a g a d, g4 r
     c,8\p r cis r d r c r
-    h r h\cresc r c\f r c a %15
+    h\crescE r h r c\f r c a %15
     d d d d g, g'-\solo h, g
-    r c e g r h, d g
+    r c-! e-! g-! r h,-! d-! g-!
     c,4 r8 c h c d d,
-    g' g,-\markup \remark "unisono in 8va"-\tuttiE h d g4 r
-    r8 g, h d f!4 r %20
-    \mvTr e(\p-\solo d) r8 c h r
-    r c h r r c h e
-    a,2 d
-    e r8 \once \slurDashed dis( e) r
-    r dis( e) r e'4 d %25
-    c8 c, d d e\cresc e e e
-    a\f a, c a r d f a
-    r c, e a r d, d d
+    g'-! g,-!-\markup \remark "unisono in 8va" h-! d-! g4-! r
+    r8 g,-! h-! d-! f!4-! r %20
+    \mvTr e(\p-\solo d) r8 c-! h-! r
+    r c-! h-! r r c h e
+    a,2( d)
+    e r8 dis( e) r
+    r dis( e) r e'4( d) %25
+    c8 c, d d e e e e
+    a\f a, c a r d-! f-! a-!
+    r c,-! e-! a-! r d, d d
     c d e e, a4 r
-    c2-\tutti f,4 r %30
-    c'2 f4 g
+    \mvTr c2\ff-\tutti f,4 r %30
+    c'2 f4( g)
     a8 a a a g4 r
     d8 d d d g,4 r
     g' r g r
     g r g r %35
     f8\p r fis r g r f r
-    e r e\cresc r f\f r f d
-    g g g g c, \tuplet 3/2 8 { c16 e d^\critnote c[ e d] c d e }
+    e\cresc r e r f\f r f d
+    g g g g c, \tuplet 3/2 8 { c16-! e-! d-! c[-! e-! d]-! c-! d-! e-! }
     f8\p r fis r g r f r
-    e r e\cresc r f\f r f d %40
+    e\cresc r e r f\f r f d %40
     g g g g g, g g g
-    c r a'\p r f r g r \noBreak
+    c r \mvTr a'\p-\solo r f r g r \noBreak
     c, r a' r f r g r \bar "||"
     \time 3/4 \tempoAgnusB \newSpacingSection
-      \mvTr c,8.[\f-\tutti c'16 g8. c16 e,8. g16] \noBreak
+      \mvTr c,8.[\ff-\tutti c'16 g8. c16 e,8. g16] \noBreak
     c,8.[ c'16 a8. c16 f,8. a16] %45
     c,8.[ c'16 g8. c16 e,8. g16]
     c,4 r r
     R2.
-    \mvTr f2\p g4
-    a2 g4 %50
+    \mvTr f2(\p-\solo g4
+    a2 g4) %50
     f r r
     fis r r
-    g8\cresc g g g g g
+    g r r
+    \after 4 \p g,2.\mf
+    c4 r g\f %55
+    c8.[-\tutti c'16 g8. c16 e,8. g16]
+    c,8.[ c'16 a8. c16 f,8. a16]
+    c,8.[ c'16 g8. c16 e,8. g16]
+    c,4 r r
+    R2. %60
+    \mvTr f2(\p g4
+    a2 g4)
+    f r r
+    fis r r
+    g8\cresc g g g g g %65
     as\f as as as as as
-    g4 r d %55
-    g8-! d-! g4 r
+    g4 r d
+    g8-! d-! g4-! r
     \mvTr g,\p-\solo r d'
-    g8-! d-! g-!\cresc f!-! e-! d-!
-    c\f c' c,4 r
-    c\p r g %60
-    c8 g \mvTr c\f-\tutti e g c
-    h g c g c e
-    f, g, e' g, c e
+    g8-! d-!\f g-! f!-! e-! d-! %70
+    c c' c,4 r
+    c\p r g
+    c8-! \mvTr g-!\fE-\tutti c-! e-! g-! c-!
+    h-! g-! c-! g-! c-! e-!
+    f,-! g,-! e'-! g,-! c-! e-! %75
     f f f f g g
-    a a a a gis gis %65
+    a a a a gis gis
     a a a a f f
     g! g g g g g
-    g, g g g g g
-    c4 r g
-    c8 g c4 r\fermata \bar "|." %70 finis
+    g, g g g g g %80
+    c4 r r
+    R2.
+    \mvTr f2(\p-\solo g4
+    a2 g4)
+    f r r %85
+    fis r r
+    g r r
+    \after 4 \p g,2.\mf
+    c4 r g\ff
+    c8-! g-! c4-! r\fermata \bar "|." %90 finis
   }
 }
 
@@ -2228,44 +2248,44 @@ AgnusBassFigures = \figuremode {
   <6> q8 <8> <5> <7 3>
   <8 3>2 <6>4 <6 5>
   r <4 2> <6> <\t> %5
-  <5> <6> <6 4> <5 3>
-  r2 r8 <5>4.
-  r8 <6>4. <7 _+> <4\+ 2>8
-  <6>4 <5>8 <6\\>4. <6>8 q
+  <5> <6>8 <\t> <6 4>4 <5 3>
+  r2 r8 <5>4 \bassFigureExtendersOn q8
+  r8 <6>4 q8 \bassFigureExtendersOff <7 _+>4. <4\+ 2>8
+  <6>4 <5>8 <6\\> <3>4 <6>8 <5>
   <6 4>4 <5 _+>2 r8 <6> %10
-  <6 5>4. <6>8 <6 5>4. <6>8
-  r2 <6>
+  <6 5> <3>4 <6>8 <6 5> <3>4 <6>8
+  <5>2 <6>
   <6\\>8 <3> <5> <7 _+> <8 3>2
   <6>4 <6 5> <_+> <4\+ 2>
-  <6>2 <5>4 <6> %15
-  <6 4> <5 _+>2.
-  r8 <5>2 <6>4.
-  <5> <4\+ 2>8 <6>4 <6 4>8 <5 _+>
+  <6> <\t> <5> <6>8 <\t> %15
+  <6 4>4 <5 _+>2.
+  r8 <5>4 \bassFigureExtendersOn q8 r <6>4 q8 \bassFigureExtendersOff
+  <5>4. <4\+ 2>8 <6> <5> <6 4> <5 _+>
   r1
   r %20
-  <5 _+>4 <4\+ 2>4. <6>8 <6\\>4
+  <5 _+>4 <4\+ 2>8 <\t 3[+]>4 <6>8 <6\\>4
   r8 <6> <6\\>4. <6>8 <5\+ 4> <7 _+>
   r2 <7 [_!]>8 <6> <\t> <5>
-  <9 _+> \bassFigureExtendersOn <8 _+>4 <7 _+> \bassFigureExtendersOff <7 5 [_+]>8 <5 _+>4
+  <9 _+> \bassFigureExtendersOn <8 _+> q <7 _+> \bassFigureExtendersOff r <7 5 [_+]> <5 _+>4
   r8 <7 5 [_+]> <5 _+>4 <_+> <4\+ 2> %25
   <6> <6 5> <6 4> <5 _+>
-  r2 r8 <5>4.
-  r8 <6>2 q8 <4\+ 3>4
-  <6>8 q <6 4> <5 _+> r2
-  <8 6>4 <7- 5!>2. %30
-  <8 6>4 <7- 5>2 <6 4>4
+  r2 r8 <5>4 \bassFigureExtendersOn q8
+  r <6>4 q8 \bassFigureExtendersOff r <6> <4\+ 3>4
+  <6>8 <5> <6 4> <5 _+> r2
+  <8 6>8 <7- 5[!]>4. <8>2 %30
+  <8 6>8 <7- 5>4. <8 3>4 <6 4>
   <6\\ 4 3>2 <8 _!>
   <7 _+>1
   <7! 3>2 <6 4>
   <7 3> <6 4> %35
-  <6>4 <6 5>2 <4 2>4
-  <6>2 <5>4 <6>
-  <6 4> <5 3>2.
-  <6>4 <6 5>2 <4 2>4
-  <6>2 <5>4 <6> %40
+  <6>4 <6 5> <5> <4 2>
+  <6> <\t> <5> <6>8 <\t>
+  <6 4>4 <5 3>2.
+  <6>4 <6 5> <5> <4 2>
+  <6> <\t> <5>4 <6>8 <\t> %40
   <6 4>2 <5 3>
-  r2 <6 5>
-  r q
+  r4 <5> <6 5> <5>
+  r <5> <6 5> <5>
   <8 3>2 \bassFigureExtendersOn q8. q16
   <6 4>2 q8. q16 %45
   <5 3>2.
@@ -2273,24 +2293,44 @@ AgnusBassFigures = \figuremode {
   r2.
   <9 6>4 <8 \t> <7 3>
   <6 3> <5 \t> <6 4> %50
-  <7 5> <6 \t>2
+  <7 5> <6 \t> <\t \t>
   <7- 5>2.
-  <6- 3>2 <5 \t>4
+  <6! 4>
+  <5 3>
+  r %55
+  <8 3>2 \bassFigureExtendersOn q8. q16
+  <6 4>2 q8. q16
+  <5 3>2.
+  q4 \bassFigureExtendersOff r2
+  r2. %60
+  <9 6>4 <8 \t> <7 3>
+  <6 3> <5 \t> <6 4>
+  <7 5> <6 \t> <\t \t>
+  <7- 5>2.
+  <6- _!>2 <5 \t>4 %65
   \bo <7 [5-]> \bc <6\\ [\t]>2
-  <_!> <7 _+>4 %55
+  <_!> <7 _+>4
   r2.
-  r2 <[7 _+]>4
-  r2.
+  r2 <7 _+>4
+  r2. %70
   r
-  r2 <7>4 %60
+  r2 <7>4
   <8 3>2 \bassFigureExtendersOn q8 q
   <6 5>4 <8 3>4. q8 \bassFigureExtendersOff
-  <4 2>4 <6>4. \once \bassFigureExtendersOn q8
-  q2 <7>4
-  \bo <[6 3]> \bc <[5 \t]> <6 5> %65
+  <4 2>8 <\t \t> <6 3> <\t \t> <8 3> <\t \t> %75
+  <6>2 <7>4
+  <6 3> <5 \t> <6 5>
   <5>2 <6>4
   <6 4>2.
+  <5 3> %80
+  r
+  r
+  <9 6>4 <8 \t> <7 3>
+  <6 3> <5 \t> <6 4>
+  <7 5> <6 \t> <\t \t> %85
+  <7- 3>2.
+  <6! 4>
   <5 3>
   r2 <7>4
-  r2. %70 finis
+  r2. %90 finis
 }

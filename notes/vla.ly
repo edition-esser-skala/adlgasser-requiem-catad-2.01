@@ -1103,76 +1103,130 @@ AgnusViola = {
   \relative c' {
     \clef alto
     \key c \major \time 4/4 \tempoAgnus
-    <g e'>4\f r8 g'16. g32 g8 g r g16. g32
+    <g e'>4\fE r8 g'16. g32 g8 g r g16. g32
     g8 g r <e c'> a16 c,8 c c c16
     c' c,8 c c c16 d8 g, d' d
     c4 r f8\p r fis r
-    g r f r e r e\cresc r %5
-    f\f r f d g g g g
-    c,4 r <f a>2
-    <e g> <fis a,>
-    <g h,>4 r <h d, g,>8 r g e
-    d16 d d d <c d> q q q <h d>4 r8 d16. d32 %10
+    g r f r e\crescE r e r %5
+    f\fE r f d g g g g
+    c,4 r << {
+      a'2
+      g fis
+      g4
+    } \\ {
+      f2
+      e a,
+      h4
+    } >> r <h' d, g,>8 r g e
+    d16 d d d << { d d d d d4 } \\ { c16 c c c h4 } >> r8 d16. d32 %10
     d8 d r d16. d32 d8 d r <g h,>
     e16 g,8 g g g16 g' g,8 g g g16
     c8 h a d <d g,>4 r
     c8\p r cis r d r c r
-    h r h\cresc r c\f r c a %15
+    h\crescE r h r c\fE r c a %15
     d d d d g,4 r
-    <c e>2 <d g,>
-    <c e>4 r8 <d fis> <d g,>8. c16 h8 a
-    g g16 g h h d d g8 r r4
-    r8 g,16 g h h d d f!4 r %20
-    e,16\pE e' e e e e f( e) e, e' e e e e f( e)
-    e, e' e e e e f( e) e8 c h e
-    a,2 d
+    << { e'2 d e4 } \\ { c2 g c4 } >>
+    r8 << { fis } \\ { d } >> <d g,>8. c16 h8( a)
+    g g16-! g-! h-! h-! d-! d-! g8 r r4
+    r8 g,16-! g-! h-! h-! d-! d-! f!4 r %20
+    e,16\p e' e e e-! e-! f(\fp e) e, e'-! e-! e-! e-! e-! f(\fp e)
+    e, e'-! e-! e-! e-! e-! f(\fp e) e8 c h e
+    a,2(\p d)
     e r8 dis( e) r
     r dis( e) r e'4( d) %25
-    c8 c, d d e\cresc e e e
-    a,4\f r <d f>2
-    <e a,> <d f>4 d8 h
+    c8 c, d d e e e e
+    a,4\fE r << {
+      f'2
+      e f4
+    } \\ {
+      d2
+      a d4
+    } >> d8 h
     c d e e a,4 r
-    e'2 c8 f f f %30
+    e'2\ff c8 f f f %30
     e2 f8 f, g g'
     a16 <a d,>8 q q q16 d,4 r
     d16 a8 a a a16 g8 h h4
-    d32([ c h c)] d([ c h c)] d([ c h c)] d([ c d h)] e([ d c d)] e([ d c d)] e([ d c d)] e([ d e c)]
-    f([ e d e)] f([ e d e)] f([ e d e)] f([ e f d)] g([ f e f)] g([ f e f)] g([ f e f)] g([ f g e)] %35
+    d32([\fp c h c)] d([ c h c)] d([\fp c h c)] d([\fp c d h)] e([\fp d c d)] e([ d c d)] e([\fp d c d)] e([\fp d e c)]
+    f([\fp e d e)] f([ e d e)] f([\fp e d e)] f([\fp e f d)] g([\fp f e f)] g([ f e f)] g([\fp f e f)] g([\fp f g e)] %35
     f8\p r fis r g r f r
-    e r e\cresc r f\f r f d
-    g g g g c, \tuplet 3/2 8 { c16 e d^\critnote c[ e d] c d e }
+    e\cresc r e r f\f r f d
+    g g g g c, \tuplet 3/2 8 { c16-! e-! d-! c-![ e-! d-!] c-! d-! e-! }
     f8\p r fis r g r f r
-    e r e\cresc r f\f r f d %40
+    e\cresc r e r f\f r f d %40
     g g g g g, g g g
     c r a'\p r f r g r \noBreak
     c, r a' r f r g r \bar "||"
     \time 3/4 \tempoAgnusB \newSpacingSection
-      c,8.[\f c'16 g8. c16 e,8. g16] \noBreak
+      c,8.[\fE c'16 g8. c16 e,8. g16] \noBreak
     c,8.[ c'16 a8. c16 f,8. a16] %45
     c,8.[ c'16 g8. c16 e,8. g16]
-    c,4 <c e>(\p <d f)>
-    <e g> <d f> <cis? e>
-    d2.
-    c! %50
+    c,4 c(\p d)
+    e( d cis)
+    d d2
+    c!2( g4) %50
+    a a(-. a-.)
+    r a(-.\pp a-.)
+    << {
+      g2.
+      f
+      e4
+    } \\ {
+      e2.
+      d
+      e4
+    } >> r g\f %55
+    c8.[ c'16 g8. c16 e,8. g16]
+    c,8.[ c'16 a8. c16 f,8. a16]
+    c,8.[ c'16 g8. c16 e,8. g16]
+    c,4 << {
+      \once \slurDashed e( f
+      g f e) %60
+    } \\ {
+      c\p d
+      e d cis %60
+    } >>
+    d2.(
+    c!)
     a4 a'(-. a-.)
     r a(-. a-.)
-    g8\cresc h, h h h h
-    c\f c c c c c
-    d4 r d %55
-    g8 d g4 r
-    <h, d>2(\p <a c>4)
-    <g h>8-! d'-! g-!\cresc f!-! e-! d-!
-    c\f c' c,4 r
-    <e g>2(\p <d f>4) %60
-    <c e>8 <g g'>4\f q q8~
-    q q4 q q8~
-    q q4 q q8
+    g8\cresc h, h h h h %65
+    c\fE c c c c c
+    d4 r d
+    g8-! d-! g4-\parenthesize-! r
+    << { d2( c4) h8[ d] } \\ { h2\p a4 g8[ d']\fE } >>
+    g-! f!-! e-! d-! %70
+    c-! c'-! c,4 r
+    << {
+      g'2( f4)
+      e8 g4 g g8~
+      g g4 g g8~
+      g g4 g g8 %75
+    } \\ {
+      e2\p d4
+      c8 g4\f g g8~
+      g g4 g g8~
+      g g4 g g8 %75
+    } >>
     f' d4 d d8
-    c a'4 a8 h[ h] %65
+    c a'4 a8 h[ h]
     a16 a a a a a a a a a a a
     g8 g g g g g
-    f f f f f f
-    e4 r g,
-    c8 g c4 r\fermata \bar "|." %70 finis
+    f f f f f f %80
+    e4 c(\p d
+    e d cis)
+    d2.(
+    c!2) g4
+    a a(-. a-.) %85
+    r a(-.\pp a-.)
+    << {
+      g2.(
+      f)
+    } \\ {
+      e2.(
+      d)
+    } >>
+    e4 r g\f
+    c8-! g-! c4-! r\fermata \bar "|." %90 finis
   }
 }
