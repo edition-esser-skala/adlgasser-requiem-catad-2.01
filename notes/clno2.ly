@@ -350,18 +350,18 @@ BenedictusClarinoII = {
   \relative c' {
     \clef treble
     \twofourtime \key c \major \time 2/4 \tempoBenedictus
-    \partial 8 r8 R2*34 \noBreak %34
-    R2\fermata \bar "||" %35
-    \time 4/4 \tempoOsanna \newSpacingSection
-      e4\f r g r
+    \partial 8 r8 R2*101 \noBreak %101
+    R2\fermata \bar "||"
+    \time 4/4 \tempoOsanna
+      e4\fE r g r \noBreak
+    R1*4 %107
+    r2 e8\fE e16. e32 e4
+    r2 r8 c16. c32 c8 r
+    r2 r8 g'16. g32 g8 r %110
     R1*2
-    r2 e8\f e16. e32 e4
-    r2 r8 c16. c32 c8 r %40
-    r2 r8 g'16. g32 g8 r
-    R1*2
-    r4 g8. g16 e8 c16 c c8 c
-    c8.[ c16 c8. c16] c2\fermata %45
-    c8 c c c c4 r\fermata \bar "|." %46 finis
+    r4 g8.\fE g16 e8 c16 c c8 c
+    c8.[ c16 c8. c16] c2\fermata
+    c8 c c c c4 r\fermata \bar "|." %115 finis
   }
 }
 

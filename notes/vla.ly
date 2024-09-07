@@ -980,53 +980,122 @@ BenedictusViola = {
   \relative c' {
     \clef alto
     \twofourtime \key c \minor \time 2/4 \tempoBenedictus
-    \partial 8 r8 r es\f d h
+    \partial 8 r8 r es\fE d h
     c2
     d8 g, a h
-    c8. as'16-! g16.-!\> f32-! es16.-! d32-!
-    c8\p es d h %5
+    c8. as'16 g16. f32 es16. d32
+    c8 es d h %5
     c2
+    d8 g, h c
+    c h <h g'>4
+    h16\p h h h c c c c
+    d d d d h h h h %10
+    es es es es h h h h
+    c c c c es es es es
+    c8..\fE b!32 as8.. g32
+    f8.. es32 d8.. es32
+    f8.. es32 d8.. g32 %15
+    g8 c4 c8
+    c16 c c c h h h h
+    c8 c' c, r
+    r es\p d h
+    c2 %20
     d8 g, a h
     c es16.\f d32 c8 es
     <d g,>\p c4 h8
-    c es\f g c\p %10
-    c,8.. b32 as8.. g32
+    c es-!\f g-! c,-!\p
+    c4 r8 as'16.( a32) %25
+    d,8 g,\f g r
+    r g'\pE f d
+    es2
+    f8 b,( c d)
+    es es16.\f f32 g8 g %30
+    f\p es4 d8
+    es b\mf b4
+    r8 as\p as g
+    r as as g
+    r as as h %35
+    b b\f b r
+    d16\p d d d es es es es
+    f f f f d d d d
+    g g g g d d d d
+    es es es es g g g g %40
+    es8.. d32 c8.. b32
+    as8.. b32 c8.. b32
+    as8.. g32 f8.. b32
+    es,16 b'8 b b b16~\fE
+    b b'8\p b b b16~\fE %45
+    b b,8\pE b b b16~\fE
+    b b'8\pE b b b16~\fE
+    b es,-!\pE es-! es-! es8 r
+    es16( as,) as-! as-! as8 r
+    as16 as'8 as f f16 %50
+    g8\cresc g as as,
+    b16\f b b b b b b b
+    b8 b'4 b8~
+    b g f d
+    es b as c %55
+    b es4 d8
+    es es es4
+    r8 g,\p f d
+    es es4\fp es8\fpE
+    f g c, d %60
+    es g16. as32 b8 g
+    f g c d
+    es16 g32([\f as)] b16-! des,-! c8[ r16 e,]
+    f8\p as g e
+    f f4\fp f8 %65
+    g f4 e8
+    f f16.\f g32 as8 f
+    g\p c d! e
+    f as,-!\mf as4-!
+    r8 g'\p g fis\f %70
+    r8 g\p g fis\f
+    r g\p h, c
+    g' g,\f g4
+    h16\p h h h c c c c
+    d d d d h h h h %75
+    es es es es h h h h
+    c c c c es es es es
+    c8.. b32 as8.. g32
     f8.. es32 d8.. es32
-    f8.. es32 d8.. d'32
-    c16 g8 g g g16~\f
-    g g'8\p g g g16~\f %15
-    g g,8\p g g g16~\f
-    g g'8\p g g g16~\f
-    g8 c,\p c c
+    f8.. es32 d8.. d'32 %80
+    c16 g8 g g g16~\fE
+    g g'8\pE g g g16~\fE
+    g g,8\pE g g g16~\fE
+    g g'8\pE g g g16~\fE
+    g8 c,\pE c c %85
     f f f f
-    f f f f %20
+    f\cresc f f f
     es es f f
-    g\cresc g g g
-    c,16\fpE g'8 g g g16
-    g g,8 g g g16
-    g' g,8 g g g16 %25
-    g' es8 es g g16
-    c,4\cresc as'8\f f
-    g4 h,16\p d32( es) f16 h,
-    c8 c4 c8\cresc
-    es!4 r %30
-    c8\f g'4 g8~
+    g16\ffE g8 g g g16
+    c, g'8\pE g g g16~ %90
+    g g,8 g g g16~
+    g g'8 g g g16~
+    g\crescE es8 \once \tieDashed es16~ es g8 g16
+    c,4 as'8-!\fE f-!
+    g4 h,16 d32 es f16 h, %95
+    c8 as'( g fis)
+    g,4 r\fermata
+    c8 g'4 g8~
     g es d h
-    c g f as
+    c g f as %100
     g c4 h8 \noBreak
-    c c' c,4\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection
-      c8\f g c r d g, d' r \noBreak
+    c c' c,4\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
+      c8-!\fE g-! c-! r d-! g,-! d'-! r
     g8\p g4 g g g8
-    g4 r8 d( g,) c c c
-    a'16 a a a g g g g c,8\f c' c, c' %25
+    g4 r8 d(\f g,) c\p c c %105
+    a'16\cresc a a a g g g g g4 c,~\f
+    c h g' e
+    a8. f16 e16. d32 c16. h32 c8 c' c, c'
     c4 b a8 f' f, d'
-    d4 c h8 g' g,, g'
+    d4 c h8 g' g,, g' %110
     a4~ a16 f e d g4~ g16 e d c
     f4~ f16 d c h e4~ e16 c d e
-    f d e f g8 g, c b' a g %30
-    f4 e f2\fermata
-    c8 c' c, c c4 r\fermata \bar "|." %32 finis
+    f d e f g8 g, c b' a g
+    f c4 c8 c2\fermata
+    c8 c' c, c c4 r\fermata \bar "|." %115 finis
   }
 }
 

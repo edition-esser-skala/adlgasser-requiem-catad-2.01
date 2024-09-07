@@ -1207,75 +1207,126 @@ BenedictusSoprano = {
   \relative c' {
     \clef treble
     \key c \minor \time 2/4 \autoBeamOff \tempoBenedictus
-    \partial 8 r8 R2*9 %9
-    r4 r8 \mvTr g''\pE^\solo %10
-    f f16. es32 d8 d16. c32
+    \partial 8 r8 R2*36 %36
+    \mvTr b'4\pE^\solo c
+    d8 d r4
+    es b
+    g8 g r4 %40
+    R2*2
+    r4 r8 b
+    b2
+    b8 r r b %45
+    b4. b8
+    b4 r
+    r8. b16 b([ c)] c des
+    c16. c32 c8 r4
+    r8. d!16 d8 f16. d32 %50
+    es4 d16([ c)] b([ as)]
+    g4( f8.) f16
+    es4 r
+    R2*15 %68
+    r4 r8 f'16 c
+    h8 h r8. c16 %70
+    h8 h r8. c16
+    h16.([ c32)] d16. es32 f8 es16 es
+    es16. d32 d8 r4
+    R2
+    r8. d16 h8 g %75
+    R2
+    r4 r8. g'16
+    f8 f16. es32 d8 d16. c32
     h16. h32 h8 r8. c16
-    h8 h r4
+    h8 h r4 %80
     r8 g16 g' g([ f)] es d
-    es8 es r4 %15
+    es8 es r4
     r8. g16 g([ f)] es d
     es16. es32 es8 r4
-    R2
+    R2 %85
     r8. f16 f([ es!)] d c
-    h16. h32 h8 r g %20
+    h16. h32 h8 r g
     g g'16 g g([ f)] es d
     c4( h8.) h16
-    c4 r8 d16 f
+    c4 r8 d16 f %90
     es8 c r f
-    es c r %25
+    es c r
     f es d16 es c8 b!16 c
     as16. as32 as8 r4
-    r8 g f'4
-    es8 e f g16 as
-    c,8( es4) d8 %30
+    R2 %95
+    r8 es' es es16 es
+    es4(\fermata d8.) d16
     c4 r
-    R2*3 \noBreak
-    R2\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection R1*3
-    r2 r4 r8 \mvTr c\f^\tutti
-    d4( e) f r8 d %40
-    e4( fis) g r8 g
+    R2*3 \noBreak %101
+    R2\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
+      R1*5 %107
+    r2 r4 r8 \mvDl c\fE^\tutti
+    d4( e) f r8 d
+    e4( fis) g r8 g %110
     g16([ e)] d([ c)] f4~ f16[ d] c([ h)] e4~
     e16[ c] h([ a)] d4~ d16[ h] a([ g)] c4~
     c h c8 c c c
-    c4 c c2\fermata %45
-    c2. r4\fermata \bar "|." %46 finis
+    c4 c c2\fermata
+    c1\fermata \bar "|." %115 finis
   }
 }
 
 BenedictusSopranoLyrics = \lyricmode {
-  Qui %10
-  ve -- nit in no -- mi -- ne
-  Do -- mi -- ni, qui
-  ve -- nit,
-  be -- ne -- di -- ctus, qui
-  ve -- nit %15
-  in no -- mi -- ne
-  Do -- mi -- ni,
+  Be -- ne -- %37
+  di -- ctus,
+  be -- ne --
+  di -- ctus, %40
 
-  in no -- mi -- ne
-  Do -- mi -- ni, qui %20
-  ve -- nit in no -- mi -- ne
+  qui %43
+  ve --
+  nit in %45
+  no -- mi --
+  ne,
+  qui ve -- nit in
+  no -- mi -- ne,
+  qui ve -- nit in %50
+  no -- mi -- ne
   Do -- mi --
-  ni, be -- ne --
-  di -- ctus, qui
-  ve -- nit, qui %25
-  ve -- nit in no -- mi -- ne
-  Do -- mi -- ni,
-  qui ve --
-  nit in no -- mi -- ne
-  Do -- mi -- %30
   ni.
 
-  O -- %39
-  san -- na, o -- %40
+  Be -- ne -- %69
+  di -- ctus, qui %70
+  ve -- nit, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni,
+
+  qui ve -- nit, %75
+
+  qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, qui
+  ve -- nit, %80
+  be -- ne -- di -- ctus, qui
+  ve -- nit
+  in no -- mi -- ne
+  Do -- mi -- ni,
+  %85
+  in no -- mi -- ne
+  Do -- mi -- ni, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi --
+  ni, be -- ne -- %90
+  di -- ctus, qui
+  ve -- nit, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni,
+  %95
+  in no -- mi -- ne
+  Do -- mi --
+  ni.
+
+  O -- %108
   san -- na, o --
+  san -- na, o -- %110
   san -- na in __ ex -- cel --
   sis, in __ ex -- cel --
   _ sis, o -- san -- na
-  in ex -- cel -- %45
-  sis. %46 finis
+  in ex -- cel --
+  sis. %115 finis
 }
 
 AgnusSoprano = {

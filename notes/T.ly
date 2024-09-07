@@ -1108,75 +1108,124 @@ BenedictusTenore = {
   \relative c' {
     \clef "treble_8"
     \key c \minor \time 2/4 \autoBeamOff \tempoBenedictus
-    \partial 8 r8 R2*9 %9
-    r4 r8 \mvTr es\pE^\solo %10
-    c c16. b32 as8 as16. g32
-    f16. f32 f8 r8. g16
+    \partial 8 r8 R2*36 %36
+    \mvTr d4\pE^\solo es
     f8 f r4
+    g d
+    es8 b r8. g'16 %40
+    es8 es16. d32 c8 c16. b32
+    as16. as32 as8 r8. b16
+    as8 as r4
+    r r8 b
+    b2 %45
+    b4 r8 b
+    b4. b8
+    b r16 g g([ as)] as b
+    as16. as32 as8 r4
+    r8. f16 f8 as16. f32 %50
+    b4 c8 c
+    b4. b8
+    b4 r
+    R2*15 %68
+    as8.([ c16)] c8.([ f16)]
+    d!8 d r es %70
+    d d r8. es16
+    d16.[ ( es32)] h16. c32 d8 c16 c
+    c16. h32 h8 r4
+    R2*3 %76
+    r8. g'16 es8 c16 es
+    c8 c16. b!32 as8 as16. g32
+    f16. f32 f8 r8. g16
+    f8 f r4 %80
     R2
-    r8. c'16 h([ d)] d f %15
-    \appoggiatura f32 es16 d32([ c)] c8 r4
+    r8. c'16 h([ d)] d f
+    es d32([ c)] c8 r4
     r8 c~ c16[ h] d([ f)]
-    \appoggiatura f32 es16([ d32 c)] c8 r4
+    \grace f32 es16([ d32 c)] c8 r4 %85
     r8. as16 as([ c)] f es!
-    d16. d32 d8 r d %20
+    d16. d32 d8 r d
     es d16 c c8 f16 f
     es4( d8.) d16
-    c4 r8 h16 d
+    c4 r8 h16 d %90
     c8 c, r h'
-    c c, r h' %25
+    c c, r h'
     c g16 g g8 c16 c
     c16. f,32 f8 r4
-    r8 g d'4
-    c8 c c c16 c
-    es8( g4) h,8 %30
+    R2 %95
+    r8 c' c c16 c
+    c4(\fermata h8.) h16
     c4 r
-    R2*3 \noBreak
-    R2\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection R1*3
-    r2 r4 r8 \mvTr e\f^\tutti
-    f4( c) c r8 fis %40
-    g4( d) d r8 d
-    c4. f8 h,4. e8
+    R2*3 \noBreak %101
+    R2\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
+      R1*5 %107
+    r2 r4 r8 \mvDl e\fE^\tutti
+    f4( c) c r8 fis
+    g4( d) d r8 d %110
+    c4. f!8 h,4. e8
     a,4.( d8) g,4 e'~
     e8 d d4 c8 e f g
-    c,4. g8 a2\fermata %45
-    g2. r4\fermata \bar "|." %46 finis
+    c,4. g8 a2\fermata
+    g1\fermata \bar "|." %115 finis
   }
 }
 
 BenedictusTenoreLyrics = \lyricmode {
-  Qui %10
+  Be -- ne -- %37
+  di -- ctus,
+  be -- ne --
+  di -- ctus, qui %40
   ve -- nit in no -- mi -- ne
   Do -- mi -- ni, qui
-  ve -- nit
+  ve -- nit,
+  qui
+  ve -- %45
+  nit in
+  no -- mi --
+  ne, qui ve -- nit in
+  no -- mi -- ne,
+  qui ve -- nit in %50
+  no -- mi -- ne
+  Do -- mi --
+  ni. %53.
 
-  in no -- mi -- ne %15
+  Be -- ne -- %69
+  di -- ctus, qui %70
+  ve -- nit, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni,
+
+  qui ve -- nit, qui %77
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, qui
+  ve -- nit %80
+
+  in no -- mi -- ne
   Do -- mi -- ni,
   be -- ne --
-  di -- ctus,
+  di -- ctus %85
   in no -- mi -- ne
-  Do -- mi -- ni, qui %20
+  Do -- mi -- ni, qui
   ve -- nit in no -- mi -- ne
   Do -- mi --
-  ni, be -- ne --
+  ni, be -- ne -- %90
   di -- ctus, qui
-  ve -- nit, qui %25
+  ve -- nit, qui
   ve -- nit in no -- mi -- ne
   Do -- mi -- ni,
-  qui ve --
-  nit in no -- mi -- ne
-  Do -- mi -- %30
+  %95
+  in no -- mi -- ne
+  Do -- mi --
   ni.
 
-  O -- %39
-  san -- na, o -- %40
+  O -- %108
   san -- na, o --
+  san -- na, o -- %110
   san -- na in ex --
   cel -- sis, in __
   ex -- cel -- sis, o -- san -- na
-  in ex -- cel -- %45
-  sis. %46 finis
+  in ex -- cel --
+  sis. %115 finis
 }
 
 AgnusTenore = {

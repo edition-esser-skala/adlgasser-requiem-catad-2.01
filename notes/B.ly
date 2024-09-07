@@ -1048,11 +1048,11 @@ SanctusBassoLyrics = \lyricmode {
   san -- na, o --
   san -- na in ex -- cel -- sis. %35
 
-  O --
+  O -- %41
   san -- na, o --
   san -- na, o --
   san -- na in __ ex --
-  cel -- sis, in __ ex --
+  cel -- sis, in __ ex -- %45
   cel -- sis, o -- san -- na
   in ex -- cel --
   sis. %48 finis
@@ -1062,85 +1062,156 @@ BenedictusBasso = {
   \relative c {
     \clef bass
     \key c \minor \time 2/4 \autoBeamOff \tempoBenedictus
-    \partial 8 r8 R2*4
-    \mvTr c4\pE^\soloE d %5
-    es16.([ c32)] f8 r8. c'16
-    h8 c16. as32 \appoggiatura g16 f8. f16
+    \partial 8 r8 R2*18 %18
+    \mvTr c4\pE^\solo d
+    es16.([ c32)] f8 r8. c'16 %20
+    h8 c16. as32 \appoggiatura g8 f8. f16
     es4 r8. c'16
-    h16.([ g32)] c16. as32 \appoggiatura g16 f8. f16
-    es4 r8 c %10
-    as'8 as16. g32 f8 f16. es32
+    h16.([ g32)] c16. as32 \appoggiatura g8 f8. f16
+    es4 r8. g16
+    g16.([ f32)] as16. g32 f16.([ es32)] d16. c32 %25
+    g'16. g,32 g8 r4
+    R2*5 %31
+    b'4. as16([ g)]
+    g16.([ f32)] f8 r8. g16
+    g16.([ f32)] f8 r8. g16
+    g16.([ f32)] c'16. b32 as16.([ g32)] f16 es %35
+    b'16. b,32 b8 r4
+    R2*3
+    r8. b'16 g8 es16 b' %40
+    c8 c16 b as8 as16 g
+    f16. f32 f8 r8. g16
+    f8 f r4
+    R2
+    r8 es d16([ f)] f as %45
+    g8 f16.([ es32)] es8 r
+    r es~ es16[ d] f([ as)]
+    g8 g r4
+    r8. c16 c16([ b)] as g
+    f16. f32 f8 r8. as16 %50
+    g8 g16 g as16. as,32 as8
+    b4. b8
+    es4 r
+    R2*4 %57
+    es4 f
+    g16.([ es32)] as8 r8. es16
+    d8 es16. c'32 \appoggiatura b8 as8. as16 %60
+    g4 r8. g16
+    f16.([ d32)] es16. c'32 \appoggiatura b8 as8. as16
+    g4 r
+    R2*10 %73
+    h4 c
+    d8 d r4 %75
+    es h
+    c8 c, r8. g'16
+    as8 as16. g32 f8 f16. es32
     d16. d32 d8 r8. es16
-    d8 d r4
+    d8 d r4 %80
     r r8 g
-    g2 %15
+    g2
     g4 r8 g
     g4. g8
-    g8 r16 e e([ f)] f g
+    g8 r16 e e([ f)] f g %85
     f16. f32 f8 r4
-    r8. h16 h8 d16. h32 %20
+    r8. h16 h8 d16. h32
     c8. c16 f,4
     g4. g8
-    c,4 r
+    c,4 r %90
     r8 c16 c' h8 g
-    r c h g %25
+    r c h g
     r c, es e16 e
     f16. f32 f8 r4
-    r r8 h,
-    c b'!16 b as8 g16 f
-    g4 g, %30
-    c r
-    R2*3 \noBreak
-    R2\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection R1*3
-      r2 r4 r8 \mvTr c'\f^\tutti
-    c4( b) a r8 d %40
-    d4( c) h! r8 g
+    R2 %95
+    r8 as g fis16 fis
+    g4.\fermata g8
+    c,4 r
+    R2*3 \noBreak %101
+    R2\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
+      R1*5 %107
+    r2 r4 r8 \mvDl c'\fE^\tutti
+    c4( b) a r8 d
+    d4( c) h! r8 g %110
     a4~ a16[ f] e([ d)] g4~ g16[ e] d([ c)]
     f4~ f16[ d] c([ h)] e4~ e16[ c] d([ e)]
     f([ d e f] g4) c,8 b' a g
-    f4 e f2\fermata %45
-    c2. r4\fermata \bar "|." %46 finis
+    f4 e f2\fermata
+    c1\fermata \bar "|." %115 finis
   }
 }
 
 BenedictusBassoLyrics = \lyricmode {
-  Be -- ne -- %5
-  di -- ctus, qui
+  Be -- ne -- %19
+  di -- ctus, qui %20
   ve -- nit in no -- mi --
   ne, in
   no -- mi -- ne Do -- mi --
-  ni, qui %10
+  ni, qui
+  ve -- nit in no -- mi -- ne %25
+  Do -- mi -- ni.
+
+  Be -- ne -- %32
+  di -- ctus, qui
+  ve -- nit, qui
+  ve -- nit in no -- mi -- ne %35
+  Do -- mi -- ni,
+
+  qui ve -- nit, qui %40
   ve -- nit in no -- mi -- ne
   Do -- mi -- ni, qui
-  ve -- nit,
+  ve -- nit
+
+  in no -- mi -- ne %45
+  Do -- mi -- ni,
+  be -- ne --
+  di -- ctus,
+  in no -- mi -- ne
+  Do -- mi -- ni, qui %50
+  ve -- nit in no -- mi -- ne
+  Do -- mi --
+  ni.
+
+  Be -- ne -- %58
+  di -- ctus, qui
+  ve -- nit in no -- mi -- %60
+  ne, in
+  no -- mi -- ne Do -- mi --
+  ni.
+
+  Be -- ne -- %74
+  di -- ctus, %75
+  be -- ne --
+  di -- ctus, qui
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, qui
+  ve -- nit, %80
   qui
-  ve -- %15
+  ve --
   nit in
   no -- mi --
-  ne, qui ve -- nit in
+  ne, qui ve -- nit in %85
   no -- mi -- ne,
-  qui ve -- nit in %20
+  qui ve -- nit in
   no -- mi -- ne
   Do -- mi --
-  ni,
+  ni, %90
   be -- ne -- di -- ctus,
-  qui ve -- nit %25
+  qui ve -- nit
   in no -- mi -- ne
   Do -- mi -- ni,
-  qui
-  ve -- nit in no -- mi -- ne
+  %95
+  in no -- mi -- ne
   Do -- mi -- %30
   ni.
 
-  O -- %39
-  san -- na, o -- %40
+  O -- %108
   san -- na, o --
+  san -- na, o -- %110
   san -- na in __ ex --
   cel -- sis, in __ ex --
   cel -- sis, o -- san -- na
-  in ex -- cel -- %45
-  sis. %46 finis
+  in ex -- cel --
+  sis. %115 finis
 }
 
 AgnusBasso = {

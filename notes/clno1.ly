@@ -333,7 +333,7 @@ SanctusClarinoI = {
     r2 r8 c16. c32 c4
     r2 r8 d d r
     R1
-    r2 r8 d\fE d r
+    r2 r8 d\fE d r %35
     c4 r d r
     R1*4 %40
     r2 c8\fE c16. c32 c4
@@ -350,18 +350,18 @@ BenedictusClarinoI = {
   \relative c' {
     \clef treble
     \twofourtime \key c \major \time 2/4 \tempoBenedictus
-    \partial 8 r8 R2*34 \noBreak %34
-    R2\fermata \bar "||" %35
-    \time 4/4 \tempoOsanna \newSpacingSection
-      c'4\f r d r \noBreak
-    R1*2
-    r2 c8\f c16. c32 c4
-    r2 r8 c16. c32 c8 r %40
-    r2 r8 d16. d32 d8 r
+    \partial 8 r8 R2*101 \noBreak %101
+    R2\fermata \bar "||"
+    \time 4/4 \tempoOsanna
+      c'4\fE r d r \noBreak
+    R1*4 %107
+    r2 c8\fE c16. c32 c4
+    r2 r8 c16. c32 c8 r
+    r2 r8 d16. d32 d8 r %110
     R1*2
     r4 d8. d16 c8 c16 c c8 c
-    c8.[ c16 c8. c16] c2\fermata %45
-    c8 c c c c4 r\fermata \bar "|." %46 finis
+    c8.[ c16 c8. c16] c2\fermata
+    c8 c c c c4 r\fermata \bar "|." %115 finis
   }
 }
 

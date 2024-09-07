@@ -1162,75 +1162,159 @@ BenedictusAlto = {
   \relative c' {
     \clef treble
     \key c \minor \time 2/4 \autoBeamOff \tempoBenedictus
-    \partial 8 r8 R2*12 %12
-    r4 r8 \mvTr g'\pE^\solo
+    \partial 8 r8 R2*26 %26
+    \mvTr es4\pE^\solo f
+    g16.([ es32)] as8 r8. es16
+    d8 es16. c'32 \appoggiatura b8 as8. as16
+    g4 r8. g16 %30
+    f16.([ d32)] es16. c'32 \appoggiatura b8 as8. as16
+    g4 r8. es16
+    es16.([ d32)] d8 r8. es16
+    es16. d32 d8 r8. es16
+    es16.([ d32]) as'16. g32 f16.([ es32)] d16 es %35
+    d c32([ b)] b8 r4
+    R2
+    r8. f'16 d8 b
+    R2
+    r4 r8. b'16 %40
+    as8 as16. g32 f8 f16. es32
+    d16. d32 d8 r8. es16
+    d8 d r4
+    r8 es16 b' b([ as)] g f
+    g8 g r4 %45
+    r8. b16 b([ as)] g f
+    g16. g32 g8 r4
+    R2
+    r8. as16 as([ g)] f es
+    d!16. d32 d8 r8. as'16 %50
+    g8 b16 b b([ as)] g f
+    es4( d8.) d16
+    es4 r
+    R2*10 %63
+    f4 g
+    as16.([ f32)] b8 r8. f16 %65
+    e8 f16. des32 \appoggiatura c8 b8. b16
+    as4 r8. f'16
+    e8 f16 des \appoggiatura c8 b8. b16
+    as4 r
+    R2*4 %73
+    g'4 a
+    h8 h r4 %75
+    c g
+    es8 es r4
+    R2*2
+    r4 r8 g %80
     g2
-    g4 r8 g %15
+    g4 r8 g
     g4. g8
     g4 r
-    r8. g16 g([ as)] as b!
+    r8. g16 g([ as)] as b! %85
     as16. as32 as8 r4
-    r8. d,16 d8 f16. d32 %20
+    r8. d,16 d8 f16. d32
     c4 as'8 as
-    g4.. g16
-    g4 r
+    g4. g8
+    g4 r %90
     r8 g16 es d8 d
-    r es d d %25
+    r es d d
     r g g g16 g
     f16. c32 c8 r4
-    r r8 d
-    es g16 g c8 b16 as
-    g4. f8 %30
-    es4 r
-    R2*3 \noBreak
-    R2\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection
+    R2 %09
+    r8 es g a16 a
+    g4.\fermata g8
+    g4 r
+    R2*3 \noBreak %101
+    R2\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
       r2 r4 r8 \mvTr g\pE^\solo \noBreak
     c,4 d e f
-    \appoggiatura a16 g8([ f16 e] f[ g a h] c8) g g a
-    \appoggiatura g4 f2 e4 r8 \mvTr g\f^\tutti
-    a4( g) c, r8 a' %40
-    h!4( a) d, r8 h'
+    \appoggiatura a16 g8_([ f16 e] f[ g a h] c8) g g a %105
+    \appoggiatura g4 f2 e4 r
+    R1
+    r2 r4 r8 \mvDl g\fE^\tutti
+    a4( g) c, r8 a'
+    h!4( a) d, r8 h' %110
     a4. a8 g4. g8
     f2 e8 e g16([ e)] f([ g)]
     a8 a g4 g8 g a b
-    a4 g f2\fermata %45
-    e2. r4\fermata \bar "|." %46 finis
+    a4 g f2\fermata
+    e1\fermata \bar "|." %115 finis
   }
 }
 
 BenedictusAltoLyrics = \lyricmode {
-  Qui %13
-  ve --
-  nit in %15
-  no -- mi --
-  ne,
-  qui ve -- nit in
-  no -- mi -- ne,
-  qui ve -- nit in %20
-  no -- mi -- ne
-  Do -- mi --
-  ni,
-  be -- ne -- di -- ctus,
-  qui ve -- nit %25
+  Be -- ne -- %27
+  di -- ctus, qui
+  ve -- nit in no -- mi --
+  ne, in %30
+  no -- mi -- ne Do -- mi --
+  ni, qui
+  ve -- nit in
+  no -- mi -- ne, qui
+  ve -- nit in no -- mi -- ne %35
+  Do -- mi -- ni,
+
+  qui ve -- nit,
+
+  qui %40
+  ve -- nit in no -- mi -- ne
+  Do -- mi -- ni, qui
+  ve -- nit,
+  be -- ne -- di -- ctus, qui
+  ve -- nit %45
   in no -- mi -- ne
   Do -- mi -- ni,
-  qui
+
+  in no -- mi -- ne
+  Do -- mi -- ni, qui %50
   ve -- nit in no -- mi -- ne
-  Do -- mi -- %30
+  Do -- mi --
   ni.
 
-  O -- %36
+  Be -- ne -- %64
+  di -- ctus, qui %65
+  ve -- nit in no -- mi --
+  ne, in
+  no -- mi -- ne Do -- mi --
+  ni,
+
+  be -- ne -- %74
+  di -- ctus, %75
+  be -- ne --
+  di -- ctus,
+
+  qui %80
+  ve --
+  nit in
+  no -- mi --
+  ne,
+  qui ve -- nit in %85
+  no -- mi -- ne,
+  qui ve -- nit in
+  no -- mi -- ne
+  Do -- mi --
+  ni, %90
+  be -- ne -- di -- ctus,
+  qui ve -- nit
+  in no -- mi -- ne
+  Do -- mi -- ni,
+  %95
+  in no -- mi -- ne
+  Do -- mi --
+  ni.
+
+  O -- %103
   san -- na in ex --
-  cel -- sis, in ex --
-  cel -- sis, o --
-  san -- na, o -- %40
+  cel -- sis, in ex -- %105
+  cel -- sis.
+
+  O --
   san -- na, o --
+  san -- na, o -- %110
   san -- na in ex --
   cel -- sis, o -- san -- na
   in ex -- cel -- sis, o -- san -- na
-  in ex -- cel -- %45
-  sis. %46 finis
+  in ex -- cel --
+  sis. %115 finis
 }
 
 AgnusAlto = {

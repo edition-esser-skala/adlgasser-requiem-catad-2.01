@@ -12,7 +12,8 @@ markRequiemDaCapo = {
   \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark \markup \remark \concat { "Requiem da capo " }
 }
-mfp   = \dynScript "mfp"  ##f
+mfp = \dynScript "mfp" ##f
+senzaSordLB = \markup { \override #'(baseline-skip . 2) \remark \left-column { "senza" "sord." } }
 
 divideTuplets = {
   \overrideTimeSignatureSettings
@@ -35,7 +36,8 @@ tempoOffertorium = \tempoMarkup "Vivace non troppo"
 tempoSanctus = \tempoMarkup "Moderato"
   tempoSanctusB = \tempoMarkup "Allegro"
 tempoBenedictus = \tempoMarkup "Andante maestoso"
-  tempoOsanna = \tempoMarkup "Allegro"
+  tempoOsanna = \tempo 4 = 90
+  % tempoOsanna = \tempoMarkup "Allegro"
 tempoAgnus = \tempoMarkup "Andante moderato"
   tempoAgnusB = \tempoMarkup "Moderato"
 

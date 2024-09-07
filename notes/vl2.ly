@@ -957,53 +957,122 @@ BenedictusViolinoII = {
   \relative c' {
     \clef treble
     \twofourtime \key c \minor \time 2/4 \tempoBenedictus
-    \partial 8 r16. \mvTr g'32\fE-\markup \remark "con sordino" c8.[ g16 d'8. g,16]
+    \partial 8 r16. g'32\fE c8.-\conSord g16 d'8. g,16
     es'16. c32 f8~\fp f16 \appoggiatura as64 g32 f64 g as16.\f c,32
     h16. g32 c16. as32 g8 f\trill
-    es4 r8. g16\p
-    c8.[ g16 d'8. g,16] %5
-    es'16. c32 f8~\fp f16 \appoggiatura as64 g32 f64 g as16. c,32
+    es4 r8. g16
+    c8. g16 d'8. g,16 %5
+    es'16. c32 f8~\fp f16 \appoggiatura as64 g32 f64 g as16.[\f c,32]
+    h16. g32 c16. g32 g16( f) f( es)
+    es8\trill d r4
+    g8\p r a r
+    h r d32([ c h as!)] g f es d %10
+    c8 r d' r
+    es r g,32 es c es g[ es g g']
+    f16.\fE \tuplet 3/2 32 { g64 f e } f16.[ es32] d16. \tuplet 3/2 32 { es64 d c } d16.[ c32]
+    h32( d f as) f8~ f32 g f es d[ es d c]
+    h d f as f8~ f32 es d c h[ as! g f] %15
+    es16 \appoggiatura d'32 c h c16.[ g32] as16 \appoggiatura b'32 as g as16.[ f32]
+    \appoggiatura f es16 d32 c \appoggiatura c h16[ a32 g] d'4\trill
+    << { s8 <es c'> q } \\ { c8[ g] g } >> r16 g\p
+    c8. g16 d'8. g,16
+    es'16. c32 f8~\fp f16 \appoggiatura as64 g32 f64 g as16.[\fp c,32] %20
     h16. g32 c16. as32 \appoggiatura g8 f4\trill
     es8 g32\f f es d c d es f g[ a h c]
     h16.\p g32 c16. as32 \appoggiatura g8 f4\trill
-    es8 \appoggiatura d32 c(\f h c d) c16 es'\p es es %10
-    f16. \tuplet 3/2 32 { g64 f e } f16.-! es32-! d16. \tuplet 3/2 8 { es64 d c } d16.-! c32-!
-    h32( d f as) f8~ f32( g f es) d([ es d c)]
-    h( d f as) f8~ f32 es( d c) h([ as! g f)]
-    es16 es r g r f r h,32(\f d)
-    c16(\p es) r g r f r h32(\f d) %15
-    c16(\p es) r g, r f r h,32(\f d)
-    c16(\p es) r g r f r h32(\f d)
-    c16(\p es) r e,32( f) e16( f) f( g)
-    f( as) r as32( b) as16-! g-! f-! es-!
-    <d d'> <d h'>8 q q q16 %20
+    es8 \appoggiatura d32 c[\f h c d] c16 es'(-.\p es-. es-.)
+    c8-! as'16. g32 f16.\cresc es32 d16. c32 %25
+    h8 <d, g,>16.\f q32 q8 r16. b'32\p
+    es8. b16 f'8. b,16
+    g'16. es32 as8~\fp as16 \appoggiatura c64 b32 as64 b c16.[\fp es,32]
+    d16. b32 es16. c32 \appoggiatura b8 as4\trillE
+    g8 g32\f f es d es[ f g as] b c d es %30
+    d16.\p b32 es16. c32 \appoggiatura b8 as4\trillE
+    g8 \appoggiatura f32 es[\mf d es f] es8 r
+    r16 d'(-.\p d-. d-.) d-.( d-. es-. es-.)
+    r d(-. d-. d-.) d-.( d-. es-. es-.)
+    r16. as,32 c16. b32 as16. g32 f16. g32 %35
+    f8 <d b>16.\f q32 q8 r
+    b'\p r c r
+    d r f32([ es d c] b as! g f)
+    <g es'>8 r <b f'> r
+    <b g'> r b32([ g es g)] b( g b) b'-! %40
+    as16. \tuplet 3/2 32 { b64 as g } as16.[ g32] f16. \tuplet 3/2 32 { g64 f e } f16.[ es32]
+    d f as c as8~ as32 b as g f[ g f es]
+    d f as c as8~ as32 g f es d[ c b as]
+    g16-! g-! r b r as r d,32(\f f)
+    es16-!\p g-! r b r as r d32(\f f) %45
+    es16-!\p g-! r b, r as r d,32(\f f)
+    es16-!\p g-! r b r as r d32\f( f)
+    es16-!\p g-! r g,32( as) g16( as) as( b)
+    as-! c-! r c32( des) c16-! b-! as-! g-!
+    f d'8 d d, d16 %50
+    es\cresc b'8 b16 b32( as16.) g32( f16.)
+    es32\f g g g g g g g d f f f f f f f
+    es8 g'~ \tuplet 3/2 8 { g16 as g f[ es d]
+    es[ g es] } b8~ \tuplet 3/2 8 { b16 c b \appoggiatura b as[ g as]
+    g b g es[ g es] c c' as f[ as f] } %55
+    b,8 \appoggiatura f'32 es d es f f4\trill
+    es8 <es b' g'> q r16 b\pE
+    es8. b16 f'8. b,16
+    g'16. es32 as8~\fp as16 \appoggiatura c64 b32 as64 b c16.[\fp es,32]
+    d16. b32 es16. c32 \appoggiatura b8 as4\trill %60
+    g8 \once \slurDashed g'32[(\mf f es d)] es f g as b[ c d es]
+    d16. b32 es16. c32 \appoggiatura b8 as4\trill
+    g16 g32([\f as)] b16-! des,-! c-! \once \slurDashed b'32([ c)] des16-! e,-!
+    f8.\p c16 g'8. c,16
+    as'16. f32 b8~\fp b16 \appoggiatura des64 c32 b64 c des16.[ f,32] %65
+    e16. c32 f16. des32 \appoggiatura c8 b4\trill
+    as8-\parenthesize-! as'32[\f g f e] f g as b c[ d! e f]
+    e16.\p c32 f16. des32 \appoggiatura c8 b4\trill
+    as8 \grace g32 f([\mf e f g)] f4-!
+    r16 d!(-.\p d-. d-.) d(-. d-. es-.\f es-.) %70
+    r d(-.\p d-. d-.) d(-. d-. es-.\f es-.)
+    r d\p r h' r d( c) c-!
+    c h32( c) h16-!\fE h-! h8 r
+    g\p r a r
+    <h d,> r d32 c h as g[ f es d] %75
+    c8 r <g' d'> r
+    <g es'> r g32 es c es g[ es g g']
+    f16. \tuplet 3/2 32 { g64 f e } f16.[ es32] d16. \tuplet 3/2 32 { es64 d c } d16.[ c32]
+    h32( d f as) f8~ f32 g f es d[ es d c]
+    h( d f as) f8~ f32 es d c h[ as! g f] %80
+    es16-! es-! r g r f r h,32(\f d)
+    c16-!\p es-! r g r f r \once \slurDashed h32(\f d)
+    c16-!\p es-! r g, r f r h,32(\f d)
+    c16-!\p es-! r g r f r h32(\f d)
+    c16\p-! es-! r e,32( f) \hA e16( f) f( g) %85
+    f-! as-! r as32( b) as16-! g-! f-! es-!
+    d\cresc <d h'>8 q q q16
     c' c8 c16 c-! as-! g-! f-!
-    es32 c' c c c c c c h\< d d d d d d d
-    c8\f r r g32(\p h d f)
+    es32\ff c' c c c c c c h d d d d d d d
+    c8 r r g32(\p h d f) %90
+    es8-! r r g,32( h d f)
     es8 r r g,32( h d f)
-    es8 r r g,32( h d f) %25
-    es16 c8 c g b!16
-    as-!\cresc as32( b) as16-! as32( g) f16\f f'32( g) as16 c,
-    h16-! h32(\p c) d16 fis, g16-! f32( g) as16 d,
-    es es' e, e' f, c'(\cresc b! as)
-    g4 r %30
-    \sbOn \mvTr c,8\f-\markup \remark "senza sordino" es'~ \tuplet 3/2 8 { es16 f es \appoggiatura es32 d16 c h }
-    \tuplet 3/2 8 { c es c } g8~ \tuplet 3/2 8 { g16 as g \appoggiatura g32 f16 es f }
-    \tuplet 3/2 8 { es g es c es c as as' f d f d } \sbOff
-    g,8 \appoggiatura d'32 c( h c d) d4\trill \noBreak
-    c8 <g' es' c'> q4\fermata \bar "||" %35
-    \key c \major \time 4/4 \tempoOsanna \newSpacingSection
-      c,8\f g c r h' g h r \noBreak
-    c\p r d r e r f r
-    c4 r8 f( e) e-! e( f)
-    d16 d d d d d d d c\f g32( f) e16-! g-! c, e'32( f) g16-! e-!
-    f f, f f g g g g <c c,>8 \appoggiatura g32 f( e f g) f8 fis %40
-    g16 g g g a a a a <h! d,>8 \appoggiatura a32 g( fis g a) g8 g'~
+    es16\cresc c8 c g b16
+    as as32( b) as16-! as32( g) f16 \once \slurDashed f'32(\f g) as16-! c,-!
+    h-! h32( c) d16-! fis,-! g-! \once \slurDashed f32( g) as!16-! d,-! %95
+    es16\ff es' es es es es es es
+    es4 r\fermata-\senzaSordLB
+    c,8\f es'~ \tuplet 3/2 8 { es16 f es \appoggiatura es32 d16[ c h]
+    c[ es c] } g8~ \tuplet 3/2 8 { g16 as g \appoggiatura g32 f16[ es f]
+    es g es c[ es c] as as' f d[ f d] } %100
+    g,8 \appoggiatura d'32 c[ h c d] d4\trill \noBreak
+    c8 <g' es' c'> q4\fermata \bar "||"
+    \key c \major \time 4/4 \tempoOsanna
+      c,8-!\fE g-! c-! r h'-! g-! h-! r \noBreak
+    c r d\p r e r f r
+    c4 r8 f(\f e) e-! e([\p f)] %105
+    d16\cresc d d d d d d d c4 r16 \appoggiatura f32 e\f d e16.[ f32]
+    e8( d) r16 \appoggiatura e32 d cis d16.[ e32] d8( c) r16 \appoggiatura d'32 c h c16.[ e,32]
+    d16 \appoggiatura g32 f e f16. a32 g16. f32 e16. d32 c16 g32 f e16-! g-! c, e'32 f g16-! e-!
+    f f, f f g g g g <a c,>8 \appoggiatura g32 f[ e f g] f8 fis
+    g16 g g g a a a a <h! d,>8 \appoggiatura a32 g[ fis g a] g8 g'~ %110
     g16 e d c f4~ f16 d c h e4~
     e16 c h a d4~ d16 h a g c4~
-    c16 c8 c16 h h h h c8-! g( a e')
-    f f, g' g, f2\fermata %45
-    e8 <c g' e'> q q q4 r\fermata \bar "|." %46 finis
+    c16 c8 c16 h h h h c8 g([ a e')]
+    f-! f,-! g'-! g,-! f2\fermata
+    e8 <c g' e'> q q q4 r\fermata \bar "|." %15 finis
   }
 }
 
