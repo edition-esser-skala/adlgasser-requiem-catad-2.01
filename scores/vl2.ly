@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "org")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,10 +12,9 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Organo"
-          \IntroitusOrgano
+          \set Staff.instrumentName = "Violino II"
+          \IntroitusViolinoII
         }
-        \new FiguredBass { \IntroitusBassFigures }
       >>
     }
   }
@@ -24,8 +23,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \KyrieOrgano }
-        \new FiguredBass { \KyrieBassFigures }
+        \new Staff { \KyrieViolinoII }
       >>
     }
   }
@@ -34,8 +32,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \SequentiaOrgano }
-        \new FiguredBass { \SequentiaBassFigures }
+        \new Staff { \SequentiaViolinoII }
       >>
     }
   }
@@ -44,39 +41,37 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \LiberOrgano }
-        \new FiguredBass { \LiberBassFigures }
+        \new Staff { \LiberViolinoII }
       >>
     }
   }
   \bookpart {
     \subsection "Lacrymosa"
     \addTocEntry
-    \paper { systems-per-page = #6 }
+    \paper { systems-per-page = #8 }
     \score {
       <<
-        \new Staff { \LacrymosaOrgano }
-        \new FiguredBass { \LacrymosaBassFigures }
+        \new Staff { \LacrymosaViolinoII }
       >>
     }
+    \markup \null
   }
   \bookpart {
     \section "4" "Offertorium"
     \addTocEntry
     \score {
       <<
-        \new Staff { \OffertoriumOrgano }
-        \new FiguredBass { \OffertoriumBassFigures }
+        \new Staff { \OffertoriumViolinoII }
       >>
     }
   }
   \bookpart {
     \section "5" "Sanctus"
     \addTocEntry
+    \paper { systems-per-page = #8 page-count = #2 }
     \score {
       <<
-        \new Staff { \SanctusOrgano }
-        \new FiguredBass { \SanctusBassFigures }
+        \new Staff { \SanctusViolinoII }
       >>
     }
   }
@@ -85,9 +80,9 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \BenedictusOrgano}
-        \new FiguredBass { \BenedictusBassFigures }
+        \new Staff { \BenedictusViolinoII }
       >>
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
     }
   }
   \bookpart {
@@ -95,9 +90,9 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AgnusOrgano }
-        \new FiguredBass { \AgnusBassFigures }
+        \new Staff { \AgnusViolinoII }
       >>
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
     }
   }
 }
