@@ -1,7 +1,7 @@
 \version "2.24.2"
 
 #(define option-movement-title-format "number-title")
-#(define option-print-all-bar-numbers #t)
+#(define option-print-all-bar-numbers #f)
 \include "ees_articulate.ly"
 \include "ees.ly"
 
@@ -38,8 +38,7 @@ tempoSanctus = \tempoMarkup "Moderato"
 tempoBenedictus = \tempoMarkup "Andante maestoso"
   tempoOsanna = \tempoMarkup "Allegro"
 tempoAgnus = \tempoMarkup "Andante moderato"
-  tempoAgnusB = \tempo 4 = 90
-  % tempoAgnusB = \tempoMarkup "Largo non troppo"
+  tempoAgnusB = \tempoMarkup "Largo non troppo"
 
 
 \include "notes/fag1.ly"
